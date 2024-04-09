@@ -69,7 +69,7 @@ ol {
   block-size: 100%;
   margin: auto;
   color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
 }
@@ -117,6 +117,15 @@ ol {
   margin-block-end: 5px;
 }
 
+.search-form__label:focus {
+  outline: none;
+}
+
+.search-form__label:has(:focus-visible) {
+  outline: 1px solid #fff;
+  outline-offset: 1px;
+}
+
 .search-form__textfield {
   inline-size: 100%;
   background-color: transparent;
@@ -127,20 +136,19 @@ ol {
   font-size: 18px;
   font-weight: 400;
   line-height: 21.6px;
-  color: rgb(255 255 255 / .7);
+  color: rgb(255 255 255 / 0.7);
 }
 
 .search-form__textfield:hover {
   cursor: text;
 }
 
-.search-form__textfield:active {
-  border: 1px solid #fff;
+.search-form__textfield:focus {
+  outline: none;
 }
 
-.search-form__textfield:focus {
-  outline: 1px solid #fff;
-  outline-offset: 1px;
+.search-form__textfield:active {
+  border: 1px solid #fff;
 }
 
 .search-form__checkbox-list {
@@ -176,7 +184,7 @@ ol {
 }
 
 .search-form__label-text {
-  font-family: Fira Sans Condensed;
+  font-family: Fira Sans Condensed, sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 21.6px;
@@ -216,7 +224,7 @@ ol {
   block-size: 300px;
   max-inline-size: 400px;
   overflow-y: auto;
-  padding-block-end: 1px;
+  padding: 2px;
 }
 
 .content__list-item:not(:last-child) {
