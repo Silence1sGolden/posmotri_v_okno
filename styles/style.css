@@ -195,7 +195,6 @@ ol {
   block-size: 19px;
   inline-size: 19px;
   outline: 1px solid #fff;
-  outline-offset: 1px;
 }
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox {
