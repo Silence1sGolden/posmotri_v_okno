@@ -132,7 +132,7 @@ ol {
   padding: 1px;
 }
 
-.search-form__label:focus-visible {
+.search-form__label:has(:focus-visible) {
   outline: 1px solid #fff;
   outline-offset: 2px;
 }
@@ -164,13 +164,16 @@ ol {
   appearance: none;
 }
 
+.search-form__textfield::placeholder {
+  color: rgb(255 255 255 / 0.7);
+}
+
 .search-form__textfield:focus {
-  outline: none;
+  outline: 0 none;
 }
 
 .search-form__textfield:focus-visible {
-  outline: 1px solid #fff;
-  outline-offset: 2px;
+  outline: 0 none;
 }
 
 .search-form__textfield:hover {
@@ -293,6 +296,8 @@ ol {
 
 .content__video-card-thumbnail {
   inline-size: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .more-button {
